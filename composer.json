@@ -1,22 +1,24 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "hypathbel/model-scribe",
+    "description": "A driver-based Eloquent audit log package for Laravel — log model activity to database, files, or custom targets.",
     "keywords": [
-        ":vendor_name",
+        "hypathbel",
         "laravel",
-        ":package_slug"
+        "audit",
+        "activity-log",
+        "model-scribe"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/hypathbel/model-scribe",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "HypathBel",
+            "email": "dev@hypathbel.com",
             "role": "Developer"
         }
     ],
     "require": {
-        "php": "^8.4",
+        "php": "^8.3",
         "spatie/laravel-package-tools": "^1.16",
         "illuminate/contracts": "^11.0||^12.0"
     },
@@ -35,13 +37,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src/",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories/"
+            "HypathBel\\ModelScribe\\": "src/",
+            "HypathBel\\ModelScribe\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests/",
+            "HypathBel\\ModelScribe\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/"
         }
     },
@@ -63,10 +65,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "HypathBel\\ModelScribe\\ModelScribeServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "ModelScribe": "HypathBel\\ModelScribe\\Facades\\ModelScribe"
             }
         }
     },
